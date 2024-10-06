@@ -77,6 +77,35 @@ strong {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.icon {
+    width: 15px;
+    
+    
+    
+}
+
+.img-comp {
+    width: 150px;
+    margin-left: 2rem;
+    transform: rotate(270deg);
+    border-radius: 5px;
+
+}
+
+.comp {
+    width: 150px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
