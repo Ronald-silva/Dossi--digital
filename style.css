@@ -1,81 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --background-color: #ecf0f1;
+    --text-color: #333;
+    --border-color: #bdc3c7;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
 }
 
-.titulo {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    
-}
-
 .container {
-    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    margin-bottom: 20px;
+h1, h2, h3 {
+    color: var(--secondary-color);
 }
 
-.grid {
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 1rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+p {
+    margin-bottom: 0.8rem;
+}
+
+strong {
+    color: var(--secondary-color);
+}
+
+.despesas {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.chart-container {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr;
+    .container {
+        padding: 1rem;
     }
-}
 
-form {
-    display: grid;
-    gap: 10px;
-    margin-bottom: 20px;
-}
+    h1 {
+        font-size: 2rem;
+    }
 
-.desc {
-    margin-right: 60px;
-}
+    h2 {
+        font-size: 1.5rem;
+    }
 
-input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#financial-summary, #health-info {
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-#additional-notes {
-    width: 100%;
-    height: 150px;
-    resize: vertical;
+    h3 {
+        font-size: 1.2rem;
+    }
 }

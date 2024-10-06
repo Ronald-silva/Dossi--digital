@@ -8,89 +8,114 @@
 </head>
 <body>
     <div class="container">
-        <div class='titulo'><h1>Dossiê Digital - Redução de Pensão Alimentícia</h1></div>
+        <h1>Clauberto Araujo da Silva</h1>
         
-        
-        <div id="financial-summary"></div>
-        
-        <div class="grid">
-            <div>
-                <h2>Renda</h2>
-                <div id="income-list"></div>
+        <section>
+            <h2>Resumo Financeiro</h2>
+            <p><strong>Renda Total:</strong> R$ 2.000,00</p>
+            <p><strong>Despesas Totais:</strong> R$ 2.900,00</p>
+            <p><strong>Saldo:</strong> R$ -900,00</p>
+            <div class="chart-container">
+                <canvas id="financeChart"></canvas>
             </div>
-            <div>
-                <h2>Despesas</h2>
-                <div id="expense-list"></div>
-            </div>
+        </section>
+
+        <section>
+            <h2>Renda</h2>
+            <p><strong>Motorista de Aplicativo:</strong> R$ 2000,00</p>
+        </section>
+
+        <div class="despesas">
+           
+
+            <section>
+                <h2>Despesas Pessoais</h2>
+                <p><strong>Produtos de Higiene:</strong> R$ 500,00</p>
+                <p><strong>Internet:</strong> R$ 200,00</p>
+                <p><strong>Alimentação:</strong> R$ 300,00</p>
+                <p><strong>Saude/Medicamentos:</strong> R$ 300,00</p>
+                <p><strong>Vestuario:</strong> R$ 300,00</p>
+                <div class="chart-container">
+                    <canvas id="residentialExpensesChart"></canvas>
+                </div>
+            </section>
+
+            <section>
+                <h2>Despesas Residenciais</h2>
+                <p><strong>Aluguel:</strong> R$ 500,00</p>
+                <p><strong>Alimentação:</strong> R$ 300,00</p>
+                <p><strong>Energia Elétrica/Enel:</strong> R$ 300,00</p>
+                <p><strong>Água/Cagece:</strong> R$ 300,00</p>
+                <div class="chart-container">
+                    <canvas id="residentialExpensesChart"></canvas>
+                </div>
+            </section>
+
+            <section>
+                <h2>Despesas do Automóvel</h2>
+                <p><strong>Combustível:</strong> R$ 500,00</p>
+                <p><strong>Manutenção e Reparos:</strong> R$ 200,00</p>
+                <p><strong>Lavagem:</strong> R$ 300,00</p>
+                <p><strong>Documentação (IPVA, Licenciamento):</strong> R$ 300,00</p>
+                <div class="chart-container">
+                    <canvas id="carExpensesChart"></canvas>
+                </div>
+            </section>
         </div>
 
-        <div>
-            <h2>Adicionar Item</h2>
-            <form id="add-item-form">
-                <div>
-                    <label for="description" class="desc">Descrição</label>
-                    <input type="text" id="description" required>
-                </div>
-                <div>
-                    <label for="amount" class="desc">Valor (R$)</label>
-                    <input type="number" id="amount" required>
-                </div>
-                <div>
-                    <label for="type">Tipo</label>
-                    <select id="type">
-                        <option value="income">Renda</option>
-                        <option value="expense">Despesa</option>
-                    </select>
-                </div>
-                <button type="submit">Adicionar Item</button>
-            </form>
-        </div>
+        <section>
+            <h2>Informações de Saúde</h2>
+            <p><strong>Condição:</strong> Diabético</p>
+            <p><strong>Medicação:</strong> Insulina diária</p>
+            <p><strong>Rotina:</strong> Trabalho limitado devido à condição de saúde</p>
+        </section>
 
-        <div id="health-info"></div>
+        <section>
+            <h2>Observações Adicionais</h2>
+            
+        </section>
 
-        <div>
-            <div class="titulo"><h2>Observações Adicionais</h2></div>
-            <h3>Excelentíssimo(a) Juiz(a),</div>
-
-                <h3>Venho respeitosamente apresentar as seguintes observações adicionais para fundamentar 
-                    meu pedido de redução da pensão alimentícia.</h3>
-                
-                <h3>1. Mudança na situação financeira:</h3>
-                <p>Como demonstrado no resumo financeiro, minha renda atual como motorista de aplicativo é 
-                    limitada e instável, tornando difícil manter o valor atual da pensão sem comprometer 
-                    minha subsistência básica.</p>
-                
-                <h3>2. Aumento significativo nas despesas:</h3>
-                <p>Conforme detalhado, tenho gastos consideráveis com aluguel, alimentação e, 
-                    principalmente, com medicamentos essenciais para o tratamento da minha condição de saúde.</p>
-                
-                <h3>3. Condição de saúde:</h3>
-                <p>Sou diabético, o que requer uso diário de insulina e cuidados médicos constantes. 
-                    Esta condição impacta diretamente na minha capacidade de trabalho e gera despesas 
-                    médicas regulares.</p>
-                
-                <h3>4. Limitações na rotina de trabalho:</h3>
-                <p>Devido à minha condição de saúde, enfrento limitações na minha rotina 
-                    de trabalho como motorista de aplicativo, o que afeta diretamente minha 
-                    capacidade de gerar renda.</p>
-                
-                <h3>5. Compromisso com as obrigações parentais: </h3>
-                <p>Apesar das dificuldades financeiras e de saúde, mantenho meu 
-                    compromisso em contribuir para o bem-estar da minha filha, buscando 
-                    apenas um ajuste que seja compatível com minha atual realidade.</p>
-                
-                <h3>6. Proposta de revisão: </h3>
-                <p>Solicito, respeitosamente, que Vossa Excelência considere uma 
-                    redução no valor da pensão alimentícia, de modo a refletir minha atual 
-                    capacidade financeira, permitindo que eu continue contribuindo de forma 
-                    sustentável para as necessidades da minha filha, sem comprometer minha própria 
-                    subsistência e tratamento de saúde.</p>
-                
-                <h3>Agradeço a atenção de Vossa Excelência e me coloco à disposição para fornecer 
-                    quaisquer informações adicionais que se façam necessárias.</h3>
-                
-                <h3>Respeitosamente,</h3>
-        </div>
+        <section>
+            <h3>Excelentíssimo(a) Juiz(a),</h3>
+            <p>Venho respeitosamente apresentar as seguintes observações adicionais para fundamentar 
+               meu pedido de redução da pensão alimentícia:</p>
+            
+            <h3>1. Mudança na situação financeira:</h3>
+            <p>Como demonstrado no resumo financeiro, minha renda atual como motorista de aplicativo é 
+               limitada e instável, tornando difícil manter o valor atual da pensão sem comprometer 
+               minha subsistência básica.</p>
+            
+            <h3>2. Aumento significativo nas despesas:</h3>
+            <p>Conforme detalhado, tenho gastos consideráveis com aluguel, alimentação e, 
+               principalmente, com medicamentos essenciais para o tratamento da minha condição de saúde.</p>
+            
+            <h3>3. Condição de saúde:</h3>
+            <p>Sou diabético, o que requer uso diário de insulina e cuidados médicos constantes. 
+               Esta condição impacta diretamente na minha capacidade de trabalho e gera despesas 
+               médicas regulares.</p>
+            
+            <h3>4. Limitações na rotina de trabalho:</h3>
+            <p>Devido à minha condição de saúde, enfrento limitações na minha rotina 
+               de trabalho como motorista de aplicativo, o que afeta diretamente minha 
+               capacidade de gerar renda.</p>
+            
+            <h3>5. Compromisso com as obrigações parentais:</h3>
+            <p>Apesar das dificuldades financeiras e de saúde, mantenho meu 
+               compromisso em contribuir para o bem-estar da minha filha, buscando 
+               apenas um ajuste que seja compatível com minha atual realidade.</p>
+            
+            <h3>6. Proposta de revisão:</h3>
+            <p>Solicito, respeitosamente, que Vossa Excelência considere uma 
+               redução no valor da pensão alimentícia, de modo a refletir minha atual 
+               capacidade financeira, permitindo que eu continue contribuindo de forma 
+               sustentável para as necessidades da minha filha, sem comprometer minha própria 
+               subsistência e tratamento de saúde.</p>
+            
+            <p>Agradeço a atenção de Vossa Excelência e me coloco à disposição para fornecer 
+               quaisquer informações adicionais que se façam necessárias.</p>
+            
+            <h3>Respeitosamente,</h3>
+        </section>
     </div>
     <script src="script.js"></script>
 </body>
