@@ -15,6 +15,7 @@ body {
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .container {
@@ -106,6 +107,10 @@ strong {
 a {
     text-decoration: none;
     font-weight: bold;
+}
+
+a:hover {
+    color: #617685;
 }
 
 @media (max-width: 768px) {
