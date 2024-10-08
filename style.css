@@ -72,6 +72,12 @@ strong {
     gap: 1.5rem;
 }
 
+.carExpensesChart {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .chart-container {
     margin-top: 2rem;
     padding: 1rem;
